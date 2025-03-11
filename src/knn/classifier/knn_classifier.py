@@ -43,7 +43,6 @@ class KNNClassifier:
 
     def predict_proba(self, data: np._typing.NDArray) -> np._typing.ArrayLike:
         results = self._predict_proba(data)
-        print(results)
         return np.array([result[1] for result in results])
 
     def predict(self, data: np._typing.NDArray) -> np._typing.ArrayLike:
